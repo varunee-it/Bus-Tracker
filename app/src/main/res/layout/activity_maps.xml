@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Indus_Bus_Tracker">
+
+
+    <include
+        layout="@layout/drawer_layout_main"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        tools:context=".MapsActivity"
+        tools:layout_editor_absoluteY="-60dp" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/luckybones"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/toggle_sidebar_button"
+                android:autofillHints=""
+        android:background="#94DADADA"
+        android:elevation="3dp"
+        android:hint="Search Stops"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:lines="1"
+        android:maxEms="50"
+        android:imeActionId="4"
+        android:importantForAutofill="yes"
+        android:inputType="textLongMessage|textAutoCorrect|text"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:focusedByDefault="true"
+        android:textColorHint="#000000"
+        android:textSize="15sp"
+        android:imeOptions="actionSearch"
+
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+
+    <ImageButton
+        android:id="@+id/toggle_sidebar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menuic"
+        android:layout_margin="10dp"
+
+        android:importantForAccessibility="no" />
+
+
+
+
+
+
+</RelativeLayout>
+
+

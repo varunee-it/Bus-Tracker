@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1069915404110",
+    "project_id": "indusbustracker",
+    "storage_bucket": "indusbustracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069915404110:android:d865fd6c006a9d330ad01f",
+        "android_client_info": {
+          "package_name": "com.example.indusbustracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1z1DZ5PhDJfM1Bf2PnNz9lF507maQBAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

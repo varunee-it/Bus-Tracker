@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:gravity="center"
+    tools:context=".register"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/busbg" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Register as Driver"
+        android:fontFamily="@font/luckybones"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+      >
+
+        <EditText
+            android:id="@+id/nameEditText"
+
+
+
+            android:textColorHint="#FFFFFF"
+
+            android:fontFamily="@font/luckybones"
+
+
+
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/edittext"
+
+
+            android:minHeight="48dp"
+            android:hint="Name"
+
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+
+            android:layout_width="300dp"
+            android:layout_marginHorizontal="60dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bus_number_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+>
+
+        <EditText
+            android:id="@+id/busNoEditText"
+            android:layout_height="wrap_content"
+
+
+            android:textColorHint="#FFFFFF"
+
+
+
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/luckybones"
+
+
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:layout_width="300dp"
+            android:layout_marginHorizontal="60dp"
+            android:hint="Bus Number"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_number_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+      >
+
+        <EditText
+            android:id="@+id/phoneNoEditText"
+
+
+
+
+            android:textColorHint="@color/white"
+
+
+
+            android:fontFamily="@font/luckybones"
+
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/edittext"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:layout_width="300dp"
+            android:layout_marginHorizontal="60dp"
+            android:hint="Phone Number"
+
+            android:textColor="@color/white"
+            android:importantForAutofill="no"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="25dp"
+        android:fontFamily="@font/luckybones"
+
+        android:background="@drawable/buttonbg"
+        android:text="Register"
+        android:onClick="registerUser"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>
